@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E262EAB1D9C180500909C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E262EAA1D9C180500909C19 /* AppDelegate.swift */; };
+		2E262EAD1D9C180500909C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E262EAC1D9C180500909C19 /* ViewController.swift */; };
+		2E262EB01D9C180500909C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E262EAE1D9C180500909C19 /* Main.storyboard */; };
+		2E262EB21D9C180500909C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E262EB11D9C180500909C19 /* Assets.xcassets */; };
+		2E262EB51D9C180500909C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E262EB31D9C180500909C19 /* LaunchScreen.storyboard */; };
+		2EE5B15B1D9E5277002C221F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EE5B15A1D9E5277002C221F /* GoogleService-Info.plist */; };
+		F460A5AA06BE641656CF03C3 /* libPods-FriendLocate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BE58ED39AECF2384A8316 /* libPods-FriendLocate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E262EA71D9C180500909C19 /* FriendLocate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendLocate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E262EAA1D9C180500909C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E262EAC1D9C180500909C19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E262EAF1D9C180500909C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E262EB11D9C180500909C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E262EB41D9C180500909C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E262EB61D9C180500909C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EE5B15A1D9E5277002C221F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F9F5159D85796D66F9B7F3F /* Pods-FriendLocate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendLocate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendLocate/Pods-FriendLocate.debug.xcconfig"; sourceTree = "<group>"; };
+		A83BE58ED39AECF2384A8316 /* libPods-FriendLocate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FriendLocate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCAC351D9B04BAB9A84E5AD1 /* Pods-FriendLocate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendLocate.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendLocate/Pods-FriendLocate.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E262EA41D9C180500909C19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460A5AA06BE641656CF03C3 /* libPods-FriendLocate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E262E9E1D9C180500909C19 = {
+			isa = PBXGroup;
+			children = (
+				2E262EA91D9C180500909C19 /* FriendLocate */,
+				2E262EA81D9C180500909C19 /* Products */,
+				A372661DA053FCCF2B1FB6F6 /* Pods */,
+				81DB1E7CCA2D72B41895B985 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E262EA81D9C180500909C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E262EA71D9C180500909C19 /* FriendLocate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E262EA91D9C180500909C19 /* FriendLocate */ = {
+			isa = PBXGroup;
+			children = (
+				2E262EAA1D9C180500909C19 /* AppDelegate.swift */,
+				2E262EAC1D9C180500909C19 /* ViewController.swift */,
+				2E262EAE1D9C180500909C19 /* Main.storyboard */,
+				2E262EB11D9C180500909C19 /* Assets.xcassets */,
+				2E262EB31D9C180500909C19 /* LaunchScreen.storyboard */,
+				2EE5B15A1D9E5277002C221F /* GoogleService-Info.plist */,
+				2E262EB61D9C180500909C19 /* Info.plist */,
+			);
+			path = FriendLocate;
+			sourceTree = "<group>";
+		};
+		81DB1E7CCA2D72B41895B985 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A83BE58ED39AECF2384A8316 /* libPods-FriendLocate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A372661DA053FCCF2B1FB6F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F9F5159D85796D66F9B7F3F /* Pods-FriendLocate.debug.xcconfig */,
+				CCAC351D9B04BAB9A84E5AD1 /* Pods-FriendLocate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E262EA61D9C180500909C19 /* FriendLocate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E262EB91D9C180500909C19 /* Build configuration list for PBXNativeTarget "FriendLocate" */;
+			buildPhases = (
+				BB03C6DC49A32924A5ACB0C8 /* [CP] Check Pods Manifest.lock */,
+				2E262EA31D9C180500909C19 /* Sources */,
+				2E262EA41D9C180500909C19 /* Frameworks */,
+				2E262EA51D9C180500909C19 /* Resources */,
+				6CCED75AC7ADDDBC79B04D2D /* [CP] Embed Pods Frameworks */,
+				1E45FB78D476FF9CFC7FAD56 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FriendLocate;
+			productName = FriendLocate;
+			productReference = 2E262EA71D9C180500909C19 /* FriendLocate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E262E9F1D9C180500909C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Petr Reshetin";
+				TargetAttributes = {
+					2E262EA61D9C180500909C19 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FVTU3U5H6P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2E262EA21D9C180500909C19 /* Build configuration list for PBXProject "FriendLocate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E262E9E1D9C180500909C19;
+			productRefGroup = 2E262EA81D9C180500909C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E262EA61D9C180500909C19 /* FriendLocate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E262EA51D9C180500909C19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E262EB51D9C180500909C19 /* LaunchScreen.storyboard in Resources */,
+				2EE5B15B1D9E5277002C221F /* GoogleService-Info.plist in Resources */,
+				2E262EB21D9C180500909C19 /* Assets.xcassets in Resources */,
+				2E262EB01D9C180500909C19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E45FB78D476FF9CFC7FAD56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FriendLocate/Pods-FriendLocate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CCED75AC7ADDDBC79B04D2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FriendLocate/Pods-FriendLocate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB03C6DC49A32924A5ACB0C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E262EA31D9C180500909C19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E262EAD1D9C180500909C19 /* ViewController.swift in Sources */,
+				2E262EAB1D9C180500909C19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E262EAE1D9C180500909C19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E262EAF1D9C180500909C19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E262EB31D9C180500909C19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E262EB41D9C180500909C19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E262EB71D9C180500909C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E262EB81D9C180500909C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E262EBA1D9C180500909C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F9F5159D85796D66F9B7F3F /* Pods-FriendLocate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FVTU3U5H6P;
+				INFOPLIST_FILE = FriendLocate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrreshetin.FriendLocate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2E262EBB1D9C180500909C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCAC351D9B04BAB9A84E5AD1 /* Pods-FriendLocate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FVTU3U5H6P;
+				INFOPLIST_FILE = FriendLocate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.petrreshetin.FriendLocate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E262EA21D9C180500909C19 /* Build configuration list for PBXProject "FriendLocate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E262EB71D9C180500909C19 /* Debug */,
+				2E262EB81D9C180500909C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E262EB91D9C180500909C19 /* Build configuration list for PBXNativeTarget "FriendLocate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E262EBA1D9C180500909C19 /* Debug */,
+				2E262EBB1D9C180500909C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E262E9F1D9C180500909C19 /* Project object */;
+}

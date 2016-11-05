@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FriendLocate" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-QD-up8" customClass="GMSMapView">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="289" id="WKN-Qz-gXY"/>
+                                </constraints>
+                            </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zR0-Fl-tUd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RLb-Ec-9M3"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="FriendLocate" id="0vT-Qo-EBG">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wuY-5e-slD"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JRe-QD-up8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Bez-E9-Vd7"/>
+                            <constraint firstItem="JRe-QD-up8" firstAttribute="top" secondItem="zR0-Fl-tUd" secondAttribute="bottom" id="EPJ-vr-acG"/>
+                            <constraint firstItem="zR0-Fl-tUd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="H1Y-gu-qLz"/>
+                            <constraint firstItem="zR0-Fl-tUd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WJl-cW-xKr"/>
+                            <constraint firstAttribute="trailing" secondItem="JRe-QD-up8" secondAttribute="trailing" id="jww-vA-o61"/>
+                            <constraint firstAttribute="trailing" secondItem="zR0-Fl-tUd" secondAttribute="trailing" id="qON-Iv-dHU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="JRe-QD-up8" id="LCo-9b-xpS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="94.902548725637189"/>
+        </scene>
+    </scenes>
+</document>
