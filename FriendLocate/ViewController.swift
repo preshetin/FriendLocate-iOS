@@ -20,7 +20,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             return (FIRAuth.auth()?.currentUser!.uid)!
         }
     }
-
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             map.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
@@ -34,6 +34,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     "name": UIDevice.current.name
                 ]
                 ref.child("locations").child(user!.uid).setValue(locationToSave)
+            })
+            
+            
+            let ref1 = FIRDatabase.database().reference(withPath: "locations")
+            ref1.observe(FIRDataEventType.value, with: { (snapshot) in
+                let savedLocations = snapshot.value as! [String : AnyObject]
+                for (_, loc) in savedLocations {
+                    if loc is [String:AnyObject] {
+                        let uid = loc["uid"]! as! String
+                        let latitude = loc["latitude"] as! CLLocationDegrees
+                        let longitude = loc["longitude"] as! CLLocationDegrees
+                        if self.currentUserUid != uid {
+                            print("Adding map marker for user \(uid)")
+                            let position = CLLocationCoordinate2DMake(latitude, longitude)
+                            let marker = GMSMarker(position: position)
+                            marker.title = loc["name"]! as? String
+                            marker.map = self.map
+                            
+                            let southWest = CLLocationCoordinate2DMake(latitude,longitude)
+                            let northEast = location.coordinate
+                            let bounds = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
+                            let camera = self.map.camera(for: bounds, insets:UIEdgeInsets.init(top: 50, left: 50, bottom: 50, right: 50))
+                            self.map.camera = camera!
+                            
+                        }
+                    }
+                }
             })
         }
         self.locationManager.stopUpdatingLocation()
@@ -50,39 +77,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         print("current user is \(self.currentUserUid)")
         
-        let ref = FIRDatabase.database().reference(withPath: "locations")
-        ref.observe(FIRDataEventType.value, with: { (snapshot) in
-            let savedLocations = snapshot.value as! [String : AnyObject]
-            for (_, location) in savedLocations {
-                if location is [String:AnyObject] {
-                    let uid = location["uid"]! as! String
-                    let latitude = location["latitude"] as! CLLocationDegrees
-                    let longitude = location["longitude"] as! CLLocationDegrees
-                    if self.currentUserUid != uid {
-                        print("Adding map marker for user \(uid)")
-                        let position = CLLocationCoordinate2DMake(latitude, longitude)
-                        let marker = GMSMarker(position: position)
-                        marker.title = location["name"]! as? String
-                        marker.map = self.map
-//                        
-//                        var southWest = CLLocationCoordinate2DMake(latitide,longititude)
-//                        var northEast = CLLocationCoordinate2DMake(latitude,longitude)
-//                        var bounds = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
-//                        var camera = mapView.cameraForBounds(bounds, insets:UIEdgeInsetsZero)
-//                        mapView.camera = camera
-                        
-                    }
-                }
-            }
-        })
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         print("MEMORY WARNING")
     }
-
+    
 }
 
