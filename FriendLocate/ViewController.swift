@@ -14,6 +14,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet weak var map: GMSMapView!
     
+    @IBAction func unwindToMap(segue: UIStoryboardSegue) {}
+    
     let locationManager = CLLocationManager()
 
     
@@ -44,19 +46,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         map.isMyLocationEnabled = true
         map.settings.myLocationButton = true
         
-        
-        
-        FIRAuth.auth()?.signInAnonymously() { (user, error) in
-            if error != nil {
-                print("Sign in failed: \(error)")
-            } else {
-                print(user?.uid)
-            }
-        }
-        
+        drawFriendMarkersOnMap()
+    }
+    
+    
+    private func drawFriendMarkersOnMap() {
         let ref1 = FIRDatabase.database().reference(withPath: "locations")
-
-        ref1.observe(FIRDataEventType.value, with: { (snapshot) in
+        
+        ref1.observeSingleEvent(of: .value, with: { (snapshot) in
             let savedLocations = snapshot.value as! [String : AnyObject]
             for (_, loc) in savedLocations {
                 if loc is [String:AnyObject] {
@@ -75,12 +72,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                             let northEast = self.map.myLocation!.coordinate
                             let bounds = GMSCoordinateBounds(coordinate: northEast, coordinate: southWest)
                             let camera = self.map.camera(for: bounds, insets:UIEdgeInsets.init(top: 50, left: 50, bottom: 50, right: 50))
-                            self.map.camera = camera!                            
+                            self.map.camera = camera!
                         }
                     }
                 }
             }
-            ref1.removeAllObservers()
         })
     }
     

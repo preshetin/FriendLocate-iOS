@@ -12,6 +12,7 @@
 		2E262EB01D9C180500909C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E262EAE1D9C180500909C19 /* Main.storyboard */; };
 		2E262EB21D9C180500909C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E262EB11D9C180500909C19 /* Assets.xcassets */; };
 		2E262EB51D9C180500909C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E262EB31D9C180500909C19 /* LaunchScreen.storyboard */; };
+		2E2E4B001DD3796B0060042E /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E4AFF1DD3796B0060042E /* AddFriendViewController.swift */; };
 		2EE5B15B1D9E5277002C221F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EE5B15A1D9E5277002C221F /* GoogleService-Info.plist */; };
 		F460A5AA06BE641656CF03C3 /* libPods-FriendLocate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A83BE58ED39AECF2384A8316 /* libPods-FriendLocate.a */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		2E262EB11D9C180500909C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E262EB41D9C180500909C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E262EB61D9C180500909C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2E4AFF1DD3796B0060042E /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		2EE5B15A1D9E5277002C221F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F9F5159D85796D66F9B7F3F /* Pods-FriendLocate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendLocate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendLocate/Pods-FriendLocate.debug.xcconfig"; sourceTree = "<group>"; };
 		A83BE58ED39AECF2384A8316 /* libPods-FriendLocate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FriendLocate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 			children = (
 				2E262EAA1D9C180500909C19 /* AppDelegate.swift */,
 				2E262EAC1D9C180500909C19 /* ViewController.swift */,
+				2E2E4AFF1DD3796B0060042E /* AddFriendViewController.swift */,
 				2E262EAE1D9C180500909C19 /* Main.storyboard */,
 				2E262EB11D9C180500909C19 /* Assets.xcassets */,
 				2E262EB31D9C180500909C19 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2E4B001DD3796B0060042E /* AddFriendViewController.swift in Sources */,
 				2E262EAD1D9C180500909C19 /* ViewController.swift in Sources */,
 				2E262EAB1D9C180500909C19 /* AppDelegate.swift in Sources */,
 			);
